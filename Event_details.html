@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Event details
+    </title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+</head>
+
+
+<style>
+*{
+    margin:0;
+    padding:0;   
+}
+.heading{
+    text-align: center;
+    color:white;
+    background-color: rgb(12, 184, 12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.heading h1{
+    padding-top: 40px;
+
+    padding-bottom: 20px;
+}
+.heading p{
+    padding-bottom: 40px;
+}
+
+nav{
+    background-color: grey;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul{
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    color: green; 
+}
+nav li{
+    padding: 20px 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.abt,.schedule,.speaker,.cont{
+    border-radius: 5px;
+    box-shadow: rgb(215, 212, 212) 2px 2px 6px 9px;
+    background-color: white;
+    width: 800px;
+    margin-left: 150px;
+    padding: 50px;
+    margin-top: 100px;
+}
+.schedule{
+    height: 250px;
+}
+.abt h1,.schedule h1,.speaker h1, .cont h1 {
+    color: rgb(11, 161, 220);
+    padding-bottom: 20px;
+}
+.abt p{
+    color: rgb(104, 103, 103);
+    font-size: 20px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+table th,table td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+table th {
+        background-color: #f1f1f1;
+        
+        color: #333;
+}
+table tr:nth-child(even) {
+    background-color: honeydew;
+}
+.speaker ul{
+    display: inline-block;
+    font-size: larger;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.speaker li{
+        margin: 17px 0;
+}
+.speaker li strong{
+    color: rgb(11, 161, 220) ;
+}
+.speaker{
+    height: 200px;
+}
+.cont{
+    margin-bottom: 100px;
+}
+form {
+    padding-left: 80px;
+}
+form label{
+    font-size: large;
+    color: rgb(75, 75, 75);
+}
+form input,form textarea{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 30px 0px;
+    border-radius: 10px;
+    border: rgb(176, 174, 174) solid 1px;
+}
+form textarea{
+    height: 80px;
+}
+form button{
+    width: 100%;
+    background-color:rgb(11, 161, 220) ;
+    color: white;
+    height: 50px;
+    border: solid 1px ;
+    font-size: larger;
+    border-radius: 30px;
+}
+</style>
+
+
+<body>
+<div class="main">
+    <div class="heading">
+        <h1>Welcome to National TechCon 2025</h1>
+        <p>The Ultimate Technology and Programming Conference</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#about">About</a> 
+            </li>
+            <li>
+                <a href="#schedules">Schedule</a> 
+            </li>
+            <li>
+                <a href="#speakers">Speaker</a> 
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="abt" id="about">
+        <h1>About the Event</h1>
+        <p>National TechCon 2025 brings together leading minds in programming, tech, and innovation. Join us for a day of insightful talks, hands-on workshops, and an opportunity to network with fellow geeks and professionals from all around the world.</p>
+    </div>
+
+    <div class="schedule" id="schedules">
+        <h1>Event</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Contest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Opening Keynote</td>
+                    <td>National Coding Platform</td> 
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Understanding AI and Machine Learning</td>
+                    <td>Mr. Arvind Kumar</td> 
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Lunch Break</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Exploring the Future of Cloud Computing</td>
+                    <td>Ms. Neha Gupta</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="speaker" id="speakers">
+        <h1>Meet the Speakers</h1>
+        <ul>
+            <li><strong>Dr. Radhika Sharma:</strong> AI Expert and Researcher</li>
+            <li><strong>Mr. Arvind Kumar:</strong> Senior Data Scientist at TechWave</li>
+            <li><strong>Ms. Neha Gupta:</strong> Cloud Computing Specialist at CloudTech</li>
+            <li><strong>Mr. Sandeep Reddy:</strong> Full Stack Developer and Open-Source Contributor</li>
+        </ul>
+    </div>
+
+    <div class="cont" id="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" 
+            ><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
