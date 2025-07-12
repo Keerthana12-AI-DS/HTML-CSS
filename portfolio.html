@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana S - Portfolio</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333; /* Dark gray text */
+            line-height: 1.6;
+        }
+        /* Container for content with max-width and padding */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Section styling with rounded corners and shadow */
+        section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Heading styles */
+        h1 {
+            color: #1a202c; /* Darker text for main heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2d3748; /* Slightly lighter dark text for subheadings */
+            border-bottom: 2px solid #edf2f7; /* Light border under subheadings */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #4a5568; /* Even lighter dark text for project headings */
+            margin-bottom: 10px;
+        }
+        /* List item styling */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        /* Link styling */
+        a {
+            color: #3182ce; /* Blue for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <!-- Main Heading -->
+        <header class="mb-8">
+            <h1 class="text-5xl font-extrabold text-gray-900 rounded-lg p-4 bg-gradient-to-r from-blue-100 to-purple-100 shadow-lg">KEERTHANA S</h1>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="rounded-lg shadow-md p-6 bg-white">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-blue-200">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Motivated AI & Data Science undergraduate with hands-on experience in developing machine learning models, data analysis, and front-end development. Proven ability to deliver practical AI solutions and contribute to innovative projects through internships and academic initiatives. Strong academic record with leadership in technical presentations. I am passionate about turning data into intelligent solutions and continuously learning new technologies.
+            </p>
+        </section>
+
+        <!-- Skills and Interests Section -->
+        <section id="skills-interests" class="rounded-lg shadow-md p-6 bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Technical Skills -->
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-blue-200">Technical Skills</h2>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>Languages: Python, Java, SQL, R</li>
+                        <li>Tools: Microsoft Excel, Data Analytics</li>
+                        <li>Web: HTML, CSS, JavaScript</li>
+                        <li>Other: Front-End Development, Data Science Workflow</li>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-blue-200">Soft Skills</h2>
+                    <ul class="list-disc list-inside text-lg text-gray-700">
+                        <li>Problem Solving</li>
+                        <li>Adaptability</li>
+                        <li>Leadership</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="rounded-lg shadow-md p-6 bg-white">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-blue-200">Projects</h2>
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-700">Logi-Chain AI - Intelligent Supply Chain Optimization</h3>
+                    <p class="text-md text-gray-600 mb-2">Block - Ultimate Protection | Jan 2025-May 2025</p>
+                    <p class="text-lg text-gray-700">Built AI models to streamline logistics operations using predictive analytics.</p>
+                    <!-- Add a placeholder link if no actual link is available -->
+                    <a href="https://github.com/keerthana/logichain-ai" class="text-blue-600 hover:underline" target="_blank">View Project (Placeholder Link)</a>
+                </div>
+                <!-- Project 2 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-700">E-Commerce Website</h3>
+                    <p class="text-md text-gray-600 mb-2"></p>
+                    <p class="text-lg text-gray-700">Developed a responsive web interface using HTML, CSS, and JavaScript. Implemented product catalogue and user-friendly navigation.</p>
+                    <!-- Add a placeholder link if no actual link is available -->
+                    <a href="https://github.com/keerthana/e-commerce-website" class="text-blue-600 hover:underline" target="_blank">View Project (Placeholder Link)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact" class="rounded-lg shadow-md p-6 bg-white">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4 pb-2 border-b-2 border-blue-200">Contact Information</h2>
+            <p class="text-lg text-gray-700 mb-2">Email: <a href="mailto:keerthanaasiva@gmail.com" class="text-blue-600 hover:underline">keerthanaasiva@gmail.com</a></p>
+            <p class="text-lg text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/keerthana" class="text-blue-600 hover:underline" target="_blank">Keerthana | LinkedIN</a></p>
+            <p class="text-lg text-gray-700">Phone: +91-9600056944</p>
+            <p class="text-lg text-gray-700">Location: Tiruvannamalai, Tamil Nadu</p>
+        </section>
+    </div>
+</body>
+</html>
