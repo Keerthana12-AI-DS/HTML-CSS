@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship</title>
+</head>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.head{
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to left bottom, rgb(255, 182, 193), rgb(31, 234, 223)); 
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(255, 0, 51);
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.content{
+  background-image: linear-gradient(to left bottom, rgb(252, 252, 97),rgb(255, 101, 101)); 
+  display: flex; /* Makes .content a flex container */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: center;
+  gap: 30px;
+}
+
+.first, .second, .third, .forth {
+  background-color: rgb(255, 249, 249);
+  box-shadow: 0px 0px 12px rgba(0,0,0.2);
+  border-radius: 10px;
+  height: auto;
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content within the card */
+  justify-content: space-between;
+  margin: 80px;
+}
+
+.third, .forth {
+  margin-top: -80px;
+}
+
+h3{
+  padding-bottom: 8px;
+}
+ul{
+    padding-left: 10px;
+}
+ a{
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(0, 135, 253);
+  margin: 10px 0px 0px 140px;
+  padding: 10px;
+  height: 20px;
+  width:90px;
+  border-radius: 10px;
+ }
+</style>
+
+<body>
+  <div class="main">
+
+    <div class="head">
+      <h1>Internships</h1>
+    </div>
+
+    <div class="content">
+
+      <div class="first">
+        <h3>Web development Internship program</h3>
+        <ul>
+          <li>Duration: 1 month/2 months</li>
+          <li>Location: Virtual</li>
+          <li>Stipend: -</li>
+          <li>Start date: 05/11/2023</li>
+        </ul>
+        <a href="https://www.sss.in/">view details</a>
+      </div>
+
+      <div class="second">
+        <h3>App Development Internship Program</h3>
+        <ul>
+          <li>Duration: 1 month/2 months</li>
+          <li>Location: Virtual</li>
+          <li>Stipend: -</li>
+          <li>Start date: 05/11/2023</li>
+        </ul>
+        <a href="https://www.hhh.in/">view details</a>
+      </div>
+
+      <div class="third">
+        <h3>Python Programming Internship Program</h3>
+        <ul>
+          <li>Duration: 1 month/2 months</li>
+          <li>Location: Virtual</li>
+          <li>Stipend: -</li>
+          <li>Start date: 05/11/2023</li>
+        </ul>
+        <a href="https://www.rrr.in/">view details</a>
+      </div>
+
+    <div class="forth">
+      <h3>Java Programming Internship Program</h3>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://www.xxx.in/">view details</a>
+    </div>
+   </div>
+
+  </div>
+</body>
+
+</html>
